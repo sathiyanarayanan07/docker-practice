@@ -1,10 +1,8 @@
 from flask import Flask
-
 app = Flask(__name__)
 
 @app.route("/")
 def home():
-    return "hello from flask Docker lab"
-
-app.run(host="0.0.0.0",port=8000)
+    return "Docker practice App"
+app.run(host="0.0.0.0", port=5000)
 
